@@ -1,0 +1,658 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"m",
+				"minute1"
+			],
+			[
+				"mi",
+				"minute2"
+			],
+			[
+				"h",
+				"hour1"
+			],
+			[
+				"ho",
+				"hour2"
+			],
+			[
+				"min",
+				"minute1"
+			],
+			[
+				"minu",
+				"minute1"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"mysql",
+				"mysql_connect"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"onm",
+				"onmouseup\tAttr"
+			],
+			[
+				"ba",
+				"backgroundColor"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"p",
+				"padding-right"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"s",
+				"style\tAttr"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"btn",
+				"btn_b22"
+			],
+			[
+				"i",
+				"img\tTag"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"box",
+				"box2"
+			],
+			[
+				"a",
+				"arguments"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"onC",
+				"onclick\tAttr"
+			],
+			[
+				"t",
+				"type\tAttr"
+			],
+			[
+				"c",
+				"createPlayer"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"sess",
+				"session_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tdouble a,b;\n\n\tscanf(\"%lf %lf\",&a,&b);\n\n\tdouble c = (a+b)/2;\n\n\tprintf(\"%lf和%lf的平均值=%lf\\n\", a,b,c);\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n\n",
+			"file": "average.c",
+			"file_size": 235,
+			"file_write_time": 131464931004931800,
+			"settings":
+			{
+				"buffer_size": 213,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tdouble foot;\n\tdouble inch;\n\n\tscanf(\"%lf %lf\",&foot,&inch);\n\n\tprintf(\"身高是%lf米。\\n\", ((foot + inch / 12) * 0.3048) );\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
+			"file": "height.c",
+			"file_size": 249,
+			"file_write_time": 131467462199321552,
+			"settings":
+			{
+				"buffer_size": 229,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\n// int main(int argc, char const *argv[])\n// {\n// \tint hour1,minute1;\n// \tint hour2,minute2;\n\n// \tscanf(\"%d %d\",&hour1,&minute1);\n// \tscanf(\"%d %d\",&hour2,&minute2);\n\n// \tint t1 = hour1 * 60 + minute1;\n// \tint t2 = hour2 * 60 + minute2;\n\n// \tint t = t2 - t1;\n\n// \tprintf(\"时间差是%d小时%d分。\\n\", t/60,t%60);\n\n// \tsystem(\"pause\");\n// \treturn 0;\n// }\n\nint main(int argc, char const *argv[])\n{\n\tint hour1,minute1;\n\tint hour2,minute2;\n\n\tscanf(\"%d %d\",&hour1,&minute1);\n\tscanf(\"%d %d\",&hour2,&minute2);\n\n\tint ih = hour2 - hour1;\n\tint im = minute2 - minute1;\n\n\tif (im < 0){\n\t\tim = 60 + im;\n\t\tih--;\t\n\t}\n\tprintf(\"时间差是%d小时%d分。\\n\", ih,im);\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
+			"file": "time.c",
+			"file_size": 751,
+			"file_write_time": 131469837538695214,
+			"settings":
+			{
+				"buffer_size": 694,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/User/C.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "pcip",
+		"selected_items":
+		[
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"pcic",
+				"Package Control: Install Package"
+			],
+			[
+				"pc",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"PCIC",
+				"Package Control: Install Package"
+			],
+			[
+				"Material Theme: Activate theme",
+				"Material Theme: Activate theme"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"A File Icon",
+				"A File Icon: Changelog"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 414.0
+	},
+	"console":
+	{
+		"height": 176.0,
+		"history":
+		[
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/work/ZJU_C"
+	],
+	"file_history":
+	[
+		"/C/work/ZJU_C/t",
+		"/C/work/www/js_test/jquery/jquery/node_modules/bower/lib/node_modules/cli-width/coverage/lcov-report/index.html",
+		"/D/learn/PHP/TM（视频讲解及实例源程序）/sl（实例源程序）/2/1/index.php",
+		"/C/work/python_test/do_input.py",
+		"/C/work/python_test/hello.py",
+		"/C/work/Data-structure-notes/test.c",
+		"/C/work/www/js_test/js+dom/index2.html",
+		"/C/work/www/js_test/js+dom/jsdom.html",
+		"/C/work/www/js_test/js+dom/index1.html",
+		"/C/work/www/js_test/C/1/demo.js",
+		"/C/work/www/js_test/C/test.c",
+		"/C/work/www/js_test/js+dom/index.java",
+		"/C/work/www/js_test/AJAX/ajax.txt",
+		"/C/work/www/js_test/AJAX/gethint.php",
+		"/C/work/www/js_test/AJAX/getsite_mysql.php",
+		"/C/work/www/js_test/jquery/jquery.js",
+		"/C/Users/Dan/Desktop/新建 Microsoft Publisher Document.pub",
+		"/C/Users/Dan/Desktop/响应式布局/style.css",
+		"/C/work/www/html_work/public/js/jquery-3.2.1.min.js",
+		"/C/work/www/js_test/jquery/jquery/external/jquery/jquery.js",
+		"/C/work/www/jquery/index.java",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Dan/Desktop/HelloWord.java",
+		"/C/Users/Dan/Desktop/index.java",
+		"/C/work/www/html_work/index.html",
+		"/C/work/www/js_test/DOM/index5.html",
+		"/C/work/www/js_test/DOM/index4.html",
+		"/C/work/www/js_test/DOM/index3.html",
+		"/C/work/www/js_test/DOM/index2.html",
+		"/C/Users/Dan/Desktop/html_test/css01.css",
+		"/C/Users/Dan/Desktop/html_test/index.html",
+		"/C/Users/Dan/Desktop/particles.js-master/html_test/index.html",
+		"/C/work/www/js_test/verify/demo.js",
+		"/C/work/www/js_test/verify/index.html",
+		"/C/work/www/html_test/public/js/core.js",
+		"/C/work/www/html_test/index2.html",
+		"/C/work/www/html_test/clock.js",
+		"/C/work/www/html_test/time/time.css",
+		"/C/work/www/html_test/time/time.js",
+		"/C/work/www/js_test/L/time/index.html",
+		"/C/work/www/js_test/L/time/demo.js",
+		"/C/work/www/js_test/C/ajax/server.php",
+		"/C/work/www/js_test/C/ajax/index.html",
+		"/C/work/www/js_test/L/array/demo.js",
+		"/C/work/www/js_test/L/array/index.html",
+		"/C/work/www/js_test/L/function/demo.js",
+		"/C/work/www/js_test/L/object and array/index.html",
+		"/C/work/www/js_test/L/object and array/demo.js",
+		"/C/work/www/js_test/L/array/index.htm",
+		"/C/work/www/js_test/L/function/index.html",
+		"/C/work/www/js_test/L/3/demo.js",
+		"/C/work/www/js_test/L/3/index.html",
+		"/C/work/www/js_test/map/index.html",
+		"/C/work/www/js_test/C/ajax/demo.js",
+		"/C/Users/Dan/.ssh/id_rsa.pub",
+		"/C/work/www/js_test/C/4/demo.js",
+		"/C/work/www/js_test/C/4/index.html",
+		"/C/work/www/js_test/C/3/index.html",
+		"/C/work/www/js_test/C/3/demo.js",
+		"/C/work/www/js_test/C/2/index.html",
+		"/C/work/www/js_test/C/2/demo.js",
+		"/C/work/www/js_test/C/1/index.html",
+		"/C/Users/Dan/Documents/maxogden/bundle.js",
+		"/C/work/www/voxel/bundle.js",
+		"/C/work/www/voxel/package.json",
+		"/C/work/www/blog/resources/views/sites/about.blade.php",
+		"/C/work/www/blog/database/seeds/DatabaseSeeder.php",
+		"/C/work/www/blog/database/seeds/ArticleSeeder.php",
+		"/C/work/www/blog/resources/views/create.blade.php",
+		"/C/work/www/blog/config/app.php",
+		"/C/work/www/blog/.env",
+		"/C/work/www/blog/webpack.mix.js",
+		"/C/work/www/blog/server.php",
+		"/C/work/blog/app/Http/Controllers/UserController.php",
+		"/C/work/blog/resources/views/about.blade.php",
+		"/C/work/www/js_test/function.html",
+		"/C/work/www/js_test/loop.html",
+		"/C/work/www/js_test/demo.js",
+		"/C/work/www/js_test/demo.html",
+		"/C/work/www/SaySaying/Application/Home/Controller/LoginController.class.php",
+		"/C/work/www/SaySaying/Application/Home/View/Index/index.php",
+		"/C/work/www/SaySaying/Application/Home/Controller/UserController.class.php",
+		"/C/work/www/SaySaying/Application/Home/Controller/AdmController.class.php",
+		"/C/work/www/SaySaying/Application/Home/Controller/RegisterController.class.php",
+		"/C/work/www/SaySaying/Application/Home/View/Login/index.php",
+		"/C/work/www/SaySaying/Application/Home/Controller/IndexController.class.php",
+		"/C/Users/Dan/Documents/index.php"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"index",
+			"title",
+			"script",
+			"title",
+			";\">",
+			"<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<title>对象和数组</title>\n</head>\n<body>\n<script type=\"text/javascript\" src=\"demo.js\"></script>\n</body>\n</html>",
+			"();"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"title",
+			"index"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "average.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "height.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "time.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								421,
+								421
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "GBK",
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ZJU_C.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"jsdom",
+				"js+dom\\jsdom.html"
+			],
+			[
+				"c/1/demo.js",
+				"C\\1\\demo.js"
+			],
+			[
+				"ajax/ajax",
+				"AJAX\\ajax.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\work\\www\\js_test\\js+dom\\a.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
