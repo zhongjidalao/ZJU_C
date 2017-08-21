@@ -6,15 +6,15 @@ int main()
 	int price = 0;
 	int amount = 100;
 
-	printf("æ”¶ä½ ï¼ˆå…ƒï¼‰\n");
+	printf("ÊÕÄã£¨Ôª£©\n");
 	scanf("%d",&price);
 
-	printf("è¯·è¾“å…¥ç¥¨é¢\n");
+	printf("ÇëÊäÈëÆ±Ãæ\n");
 	scanf("%d",&amount);
 
 	int change = amount - price;
 
-	printf("æ‰¾æ‚¨%då…ƒ",change );
+	printf("ÕÒÄú%dÔª",change );
 
 	system("pause");
 	return 0;

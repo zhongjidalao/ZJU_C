@@ -9,13 +9,13 @@ int main(int argc, char const *argv[])
 
 	switch(type){
 		case 1:
-			printf("绗竴涓猏n");
+			printf("第一个\n");
 			break;
 		case 2:
-			printf("绗簩涓猏n");
+			printf("第二个\n");
 			break;
 		default:
-			printf("璺冲嚭\n");
+			printf("跳出\n");
 			break;
 	}
 

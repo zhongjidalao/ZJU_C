@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 	int a;
 	int b;
 
-	printf("杈撳叆涓や釜姝ｆ暣鏁帮細\n");
+	printf("输入两个正整数：\n");
 	scanf("%d %d",&a,&b);
 	printf("%d + %d = %d\n",a,b,a+b);
 
