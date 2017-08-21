@@ -4,20 +4,20 @@
 int main(int argc, char const *argv[]){
 
 	int a,b,c;
-	printf("Ó¦¸ÃÊÕÄú£º\n");
+	printf("åº”è¯¥æ”¶æ‚¨ï¼š");
 	scanf("%d",&a);
 
-	printf("Êµ¼ÊÊÕÄú£º\n");
+	printf("è¯·è¾“å…¥ç¥¨é¢ï¼š");
 	scanf("%d",&b);
 
 	c = b - a;
 
 	if(c > 0){
-		printf("ÕÒÄú%d£¨Ôª£©\n", c);
+		printf("æ‰¾æ‚¨ï¼š%d", c);
 	}else if(c == 0){
-		printf("¸ÕºÃ¡£\n");
+		printf("åˆšå¥½");
 	}else{
-		printf("Äú»¹Ó¦¸Ã¸ø%d£¨Ôª£©\n", -c);
+		printf("å†ç»™%d", -c);
 	}
 
 	system("pause");

@@ -14,7 +14,7 @@
 
 // 	int t = t2 - t1;
 
-// 	printf("时间差是%d小时%d分。\n", t/60,t%60);
+// 	printf("脢卤录盲虏卯脢脟%d脨隆脢卤%d路脰隆拢\n", t/60,t%60);
 
 // 	system("pause");
 // 	return 0;
@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
 		im = 60 + im;
 		ih--;	
 	}
-	printf("时间差是%d小时%d分。\n", ih,im);
+	printf("鏃堕棿宸槸%s灏忔椂%d鍒哱n", ih,im);
 	system("pause");
 	return 0;
 }

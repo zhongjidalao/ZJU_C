@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
 
 	scanf("%lf %lf",&foot,&inch);
 
-	printf("Éí¸ßÊÇ%lfÃ×¡£\n", ((foot + inch / 12) * 0.3048) );
+	printf("èº«é«˜æ˜¯%lfç±³ã€‚\n", ((foot + inch / 12) * 0.3048) );
 
 	system("pause");
 	return 0;

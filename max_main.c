@@ -7,7 +7,7 @@ int main(int argc, char const *argv[]){
 	int b = 0;
 	int c = 0;
 
-	printf("ÇëÊäÈëÈý¸öÕûÊý£º\n");
+	printf("è¯·è¾“ä¸‰ä¸ªæ­£æ•´æ•°ï¼š\n");
 	scanf("%d %d %d",&a,&b,&c);
 
 	if(a > b > c){

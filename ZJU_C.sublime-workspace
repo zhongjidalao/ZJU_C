@@ -156,46 +156,33 @@
 	"buffers":
 	[
 		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tdouble a,b;\n\n\tscanf(\"%lf %lf\",&a,&b);\n\n\tdouble c = (a+b)/2;\n\n\tprintf(\"%lf和%lf的平均值=%lf\\n\", a,b,c);\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n\n",
-			"file": "average.c",
-			"file_size": 235,
-			"file_write_time": 131464931004931800,
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tint a;\n\tint b;\n\n\tprintf(\"请输入两个整数：\\n\");\n\tscanf(\"%d %d\",&a,&b);\n\tprintf(\"%d + %d = %d\\n\",a,b,a+b);\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
+			"file": "plus.c",
+			"file_size": 234,
+			"file_write_time": 131476185050762934,
 			"settings":
 			{
-				"buffer_size": 213,
+				"buffer_size": 211,
 				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows",
 				"scratch": true
 			}
 		},
 		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tdouble foot;\n\tdouble inch;\n\n\tscanf(\"%lf %lf\",&foot,&inch);\n\n\tprintf(\"身高是%lf米。\\n\", ((foot + inch / 12) * 0.3048) );\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
-			"file": "height.c",
-			"file_size": 249,
-			"file_write_time": 131467462199321552,
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[]){\n\n\tint a = 0;\n\tint b = 0;\n\tint c = 0;\n\n\tprintf(\"请输入三个整数：\\n\");\n\tscanf(\"%d %d %d\",&a,&b,&c);\n\n\tif(a > b > c){\n\t\tprintf(\"\\n\");\n\t}\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
+			"file": "max_main.c",
+			"file_size": 265,
+			"file_write_time": 131476185050752798,
 			"settings":
 			{
-				"buffer_size": 229,
-				"encoding": "Western (Windows 1252)",
-				"line_ending": "Windows",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\n// int main(int argc, char const *argv[])\n// {\n// \tint hour1,minute1;\n// \tint hour2,minute2;\n\n// \tscanf(\"%d %d\",&hour1,&minute1);\n// \tscanf(\"%d %d\",&hour2,&minute2);\n\n// \tint t1 = hour1 * 60 + minute1;\n// \tint t2 = hour2 * 60 + minute2;\n\n// \tint t = t2 - t1;\n\n// \tprintf(\"时间差是%d小时%d分。\\n\", t/60,t%60);\n\n// \tsystem(\"pause\");\n// \treturn 0;\n// }\n\nint main(int argc, char const *argv[])\n{\n\tint hour1,minute1;\n\tint hour2,minute2;\n\n\tscanf(\"%d %d\",&hour1,&minute1);\n\tscanf(\"%d %d\",&hour2,&minute2);\n\n\tint ih = hour2 - hour1;\n\tint im = minute2 - minute1;\n\n\tif (im < 0){\n\t\tim = 60 + im;\n\t\tih--;\t\n\t}\n\tprintf(\"时间差是%d小时%d分。\\n\", ih,im);\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
-			"file": "time.c",
-			"file_size": 751,
-			"file_write_time": 131469837538695214,
-			"settings":
-			{
-				"buffer_size": 694,
+				"buffer_size": 238,
 				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows",
 				"scratch": true
 			}
 		}
 	],
-	"build_system": "Packages/User/C.sublime-build",
+	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -235,6 +222,22 @@
 			],
 			[
 				"Packages/User/C.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
 				""
 			]
 		]
@@ -324,6 +327,13 @@
 	],
 	"file_history":
 	[
+		"/C/work/ZJU_C/max_main.c",
+		"/C/work/ZJU_C/change.c",
+		"/C/work/ZJU_C/average.c",
+		"/C/work/ZJU_C/height.c",
+		"/C/work/ZJU_C/plus.c",
+		"/C/work/ZJU_C/time.c",
+		"/C/work/ZJU_C/game.py",
 		"/C/work/ZJU_C/t",
 		"/C/work/www/js_test/jquery/jquery/node_modules/bower/lib/node_modules/cli-width/coverage/lcov-report/index.html",
 		"/D/learn/PHP/TM（视频讲解及实例源程序）/sl（实例源程序）/2/1/index.php",
@@ -414,7 +424,7 @@
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -454,47 +464,16 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "average.c",
+					"file": "plus.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 213,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"in_converting": true,
-							"origin_encoding": "GBK",
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "height.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 229,
+						"buffer_size": 211,
 						"regions":
 						{
 						},
@@ -520,20 +499,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "time.c",
+					"buffer": 1,
+					"file": "max_main.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 694,
+						"buffer_size": 238,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								421,
-								421
+								0,
+								0
 							]
 						],
 						"settings":
