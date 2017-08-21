@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]){
 	}else if(c == 0){
 		printf("刚好");
 	}else{
-		printf("再给%d", -c);
+		printf("还差%d", -c);
 	}
 
 	system("pause");
