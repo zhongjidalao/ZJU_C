@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[]){
 
 	int a,b,c;
-	printf("应该收您：20");
+	printf("应该收您：");
 	scanf("%d",&a);
 
 	printf("请输入票面：");
