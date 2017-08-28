@@ -156,33 +156,32 @@
 	"buffers":
 	[
 		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tint a;\n\tint b;\n\n\tprintf(\"请输入两个整数：\\n\");\n\tscanf(\"%d %d\",&a,&b);\n\tprintf(\"%d + %d = %d\\n\",a,b,a+b);\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
-			"file": "plus.c",
-			"file_size": 234,
-			"file_write_time": 131476185050762934,
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[]){\n\n\tint a = 0;\n\tint b = 0;\n\tint c = 0;\n\n\tprintf(\"输入三个正整数\\n\");\n\tscanf(\"%d %d %d\",&a,&b,&c);\n\n\tif(a > b > c){\n\t\tprintf(\"\\n\");\n\t}\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
+			"file": "max_main.c",
+			"file_size": 263,
+			"file_write_time": 131482268311513201,
 			"settings":
 			{
-				"buffer_size": 211,
-				"encoding": "Western (Windows 1252)",
+				"buffer_size": 237,
 				"line_ending": "Windows",
 				"scratch": true
 			}
 		},
 		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[]){\n\n\tint a = 0;\n\tint b = 0;\n\tint c = 0;\n\n\tprintf(\"请输入三个整数：\\n\");\n\tscanf(\"%d %d %d\",&a,&b,&c);\n\n\tif(a > b > c){\n\t\tprintf(\"\\n\");\n\t}\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
-			"file": "max_main.c",
-			"file_size": 265,
-			"file_write_time": 131476185050752798,
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tint count = 3;\n\t// scanf(\"%d\",&count);\n\twhile(count >= 0){\n\t\tprintf(\"%d\\n\", count);\n\t\tcount--;\n\t}\n\tprintf(\"发射\\n\");\n\n\tsystem(\"pause\");\n\treturn 0;\n}",
+			"file": "loop.c",
+			"file_size": 245,
+			"file_write_time": 131483223304655137,
 			"settings":
 			{
-				"buffer_size": 238,
+				"buffer_size": 228,
 				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows",
 				"scratch": true
 			}
 		}
 	],
-	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system": "Packages/User/C.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -238,6 +237,22 @@
 			],
 			[
 				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C.sublime-build",
 				""
 			]
 		]
@@ -327,11 +342,12 @@
 	],
 	"file_history":
 	[
+		"/C/work/ZJU_C/num.c",
 		"/C/work/ZJU_C/max_main.c",
 		"/C/work/ZJU_C/change.c",
+		"/C/work/ZJU_C/plus.c",
 		"/C/work/ZJU_C/average.c",
 		"/C/work/ZJU_C/height.c",
-		"/C/work/ZJU_C/plus.c",
 		"/C/work/ZJU_C/time.c",
 		"/C/work/ZJU_C/game.py",
 		"/C/work/ZJU_C/t",
@@ -469,25 +485,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "plus.c",
+					"file": "max_main.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 211,
+						"buffer_size": 237,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
+								38,
 								0
 							]
 						],
 						"settings":
 						{
 							"in_converting": true,
-							"origin_encoding": "GBK",
+							"origin_encoding": "GB2312",
 							"syntax": "Packages/C++/C.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
@@ -500,23 +516,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "max_main.c",
+					"file": "loop.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 238,
+						"buffer_size": 228,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								95,
+								95
 							]
 						],
 						"settings":
 						{
+							"force_encoding": "GBK",
 							"in_converting": true,
 							"origin_encoding": "GBK",
 							"syntax": "Packages/C++/C.sublime-syntax",
@@ -571,7 +588,7 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/User/C.sublime-build",
 	"project": "ZJU_C.sublime-project",
 	"replace":
 	{

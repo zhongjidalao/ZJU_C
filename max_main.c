@@ -7,7 +7,7 @@ int main(int argc, char const *argv[]){
 	int b = 0;
 	int c = 0;
 
-	printf("璇疯緭涓変釜姝ｆ暣鏁帮細\n");
+	printf("输入三个正整数\n");
 	scanf("%d %d %d",&a,&b,&c);
 
 	if(a > b > c){
