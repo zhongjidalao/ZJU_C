@@ -156,25 +156,13 @@
 	"buffers":
 	[
 		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[]){\n\n\tint a = 0;\n\tint b = 0;\n\tint c = 0;\n\n\tprintf(\"输入三个正整数\\n\");\n\tscanf(\"%d %d %d\",&a,&b,&c);\n\n\tif(a > b > c){\n\t\tprintf(\"\\n\");\n\t}\n\n\tsystem(\"pause\");\n\treturn 0;\n}\n",
-			"file": "max_main.c",
-			"file_size": 263,
-			"file_write_time": 131482268311513201,
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\n\nint main(int argc, char const *argv[])\n{\n\tsrand(time(0));\n\tint number = rand()%100 + 1;\n\tint count = 0;\n\tint a = 0;\n\n\tprintf(\"我已经想好了一个1到100之间的数。\\n\");\n\tdo{\n\t\tprintf(\"请猜这个1到100之间的数：\\n\");\n\t\tscanf(\"%d\",&a);\n\t\tcount++;\n\t\tif(a > number){\n\t\t\tprintf(\"你猜的数大了。\\n\");\n\t\t}else if(a < number){\n\t\t\tprintf(\"你猜的数小了。\\n\");\n\t\t}\n\t}while(a != number);\n\n\tprintf(\"太好了，你用了%d次就猜到了答案。\\n\", count);\n\n\tsystem(\"pause\");\n\treturn 0;\n}",
+			"file": "rand.c",
+			"file_size": 539,
+			"file_write_time": 131483879958448483,
 			"settings":
 			{
-				"buffer_size": 237,
-				"line_ending": "Windows",
-				"scratch": true
-			}
-		},
-		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char const *argv[])\n{\n\tint count = 3;\n\t// scanf(\"%d\",&count);\n\twhile(count >= 0){\n\t\tprintf(\"%d\\n\", count);\n\t\tcount--;\n\t}\n\tprintf(\"发射\\n\");\n\n\tsystem(\"pause\");\n\treturn 0;\n}",
-			"file": "loop.c",
-			"file_size": 245,
-			"file_write_time": 131483223304655137,
-			"settings":
-			{
-				"buffer_size": 228,
+				"buffer_size": 459,
 				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows",
 				"scratch": true
@@ -342,8 +330,11 @@
 	],
 	"file_history":
 	[
-		"/C/work/ZJU_C/num.c",
+		"/C/work/ZJU_C/loop.c",
+		"/C/work/ZJU_C/index.html",
+		"/C/work/ZJU_C/rms.c",
 		"/C/work/ZJU_C/max_main.c",
+		"/C/work/ZJU_C/num.c",
 		"/C/work/ZJU_C/change.c",
 		"/C/work/ZJU_C/plus.c",
 		"/C/work/ZJU_C/average.c",
@@ -480,55 +471,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "max_main.c",
+					"file": "rand.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 237,
+						"buffer_size": 459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38,
-								0
-							]
-						],
-						"settings":
-						{
-							"in_converting": true,
-							"origin_encoding": "GB2312",
-							"syntax": "Packages/C++/C.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "loop.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 228,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								95,
-								95
+								459,
+								459
 							]
 						],
 						"settings":
