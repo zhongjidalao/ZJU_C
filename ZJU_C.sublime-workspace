@@ -159,11 +159,10 @@
 			"contents": "#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\n\nint main(int argc, char const *argv[])\n{\n\tsrand(time(0));\n\tint number = rand()%100 + 1;\n\tint count = 0;\n\tint a = 0;\n\n\tprintf(\"我已经想好了一个1到100之间的数。\\n\");\n\tdo{\n\t\tprintf(\"请猜这个1到100之间的数：\\n\");\n\t\tscanf(\"%d\",&a);\n\t\tcount++;\n\t\tif(a > number){\n\t\t\tprintf(\"你猜的数大了。\\n\");\n\t\t}else if(a < number){\n\t\t\tprintf(\"你猜的数小了。\\n\");\n\t\t}\n\t}while(a != number);\n\n\tprintf(\"太好了，你用了%d次就猜到了答案。\\n\", count);\n\n\tsystem(\"pause\");\n\treturn 0;\n}",
 			"file": "rand.c",
 			"file_size": 539,
-			"file_write_time": 131483879958448483,
+			"file_write_time": 131485499771982635,
 			"settings":
 			{
 				"buffer_size": 459,
-				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -495,6 +494,7 @@
 						{
 							"force_encoding": "GBK",
 							"in_converting": true,
+							"is_init_dirty_state": false,
 							"origin_encoding": "GBK",
 							"syntax": "Packages/C++/C.sublime-syntax",
 							"translate_tabs_to_spaces": false
