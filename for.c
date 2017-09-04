@@ -3,14 +3,13 @@
 
 int main(int argc, char const *argv[])
 {
+	//计算一个数的阶乘
 	int n;
 
 	scanf("%d", &n);
 	int fact = 1;
 
-	int i = 1;
-	for (i = 1; i < n; i++)
-	{
+	for (int i = 2; i <= n; i++){
 		fact *= i;
 	}
 

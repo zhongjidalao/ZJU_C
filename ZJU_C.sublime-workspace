@@ -156,13 +156,13 @@
 	"buffers":
 	[
 		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\n\nint main(int argc, char const *argv[])\n{\n\tsrand(time(0));\n\tint number = rand()%100 + 1;\n\tint count = 0;\n\tint a = 0;\n\n\tprintf(\"我已经想好了一个1到100之间的数。\\n\");\n\tdo{\n\t\tprintf(\"请猜这个1到100之间的数：\\n\");\n\t\tscanf(\"%d\",&a);\n\t\tcount++;\n\t\tif(a > number){\n\t\t\tprintf(\"你猜的数大了。\\n\");\n\t\t}else if(a < number){\n\t\t\tprintf(\"你猜的数小了。\\n\");\n\t\t}\n\t}while(a != number);\n\n\tprintf(\"太好了，你用了%d次就猜到了答案。\\n\", count);\n\n\tsystem(\"pause\");\n\treturn 0;\n}",
-			"file": "rand.c",
-			"file_size": 539,
-			"file_write_time": 131485499771982635,
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n\nint\tmain(int argc, char const *argv[])\n{\n\tint x;\n\n\t// scanf(\"%d\", &x);\n\tfor ( x=1; x<=100; x++){\n\t\tint i;\n\t\tint isPrime = 1;\n\t\tfor( i=2; i<x; i++ ){\n\t\t\tif( x % i == 0){\n\t\t\t\tisPrime = 0;\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\tif( isPrime == 1 ){\n\t\t\tprintf(\"%d \\n\" ,x);\n\t\t}\n\t}\n\n\tsystem(\"pause\");\n\treturn 0;\n}",
+			"file": "ctrl_loop.c",
+			"file_size": 353,
+			"file_write_time": 131489925109720176,
 			"settings":
 			{
-				"buffer_size": 459,
+				"buffer_size": 329,
 				"line_ending": "Windows",
 				"scratch": true
 			}
@@ -329,12 +329,16 @@
 	],
 	"file_history":
 	[
+		"/C/work/ZJU_C/loop_printf.c",
+		"/C/work/ZJU_C/change.c",
+		"/C/work/ZJU_C/for.c",
+		"/C/work/ZJU_C/inverse.c",
+		"/C/work/ZJU_C/rand.c",
 		"/C/work/ZJU_C/loop.c",
 		"/C/work/ZJU_C/index.html",
 		"/C/work/ZJU_C/rms.c",
 		"/C/work/ZJU_C/max_main.c",
 		"/C/work/ZJU_C/num.c",
-		"/C/work/ZJU_C/change.c",
 		"/C/work/ZJU_C/plus.c",
 		"/C/work/ZJU_C/average.c",
 		"/C/work/ZJU_C/height.c",
@@ -475,19 +479,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "rand.c",
+					"file": "ctrl_loop.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 459,
+						"buffer_size": 329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								459,
-								459
+								329,
+								329
 							]
 						],
 						"settings":
@@ -496,6 +500,7 @@
 							"in_converting": true,
 							"is_init_dirty_state": false,
 							"origin_encoding": "GBK",
+							"revert_to_scratch": true,
 							"syntax": "Packages/C++/C.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
